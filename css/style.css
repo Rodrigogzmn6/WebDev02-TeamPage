@@ -59,6 +59,8 @@ a:link, a:visited {
 
     .job {
         display: flex;
+        width: 100%;
+        justify-content: center;
     }
 
     .job img {
@@ -78,6 +80,7 @@ a:link, a:visited {
         font-size: 1.2rem;
         font-weight: 600;
         line-height: 1.3rem;
+        text-align: center;
     }
 
     .person {
@@ -107,4 +110,46 @@ a:link, a:visited {
     }
 }
 
-@media screen and (min-width: 426px) {}
+@media screen and (min-width: 426px) {
+    /*HEADER*/
+    header {
+        padding: 8% 18% 7% 17%;
+        display: flex;
+    }
+
+    h1 {
+        margin-bottom: 0%;
+        margin-right: 15%;
+        text-overflow: ellipsis;
+        width: 90%;
+    }
+
+    .introduction {
+        flex-shrink: 1;
+    }
+
+    .introduction h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0%;
+    }
+
+    .introduction p {
+        font-size: 1.1rem;
+    }
+
+    /*TEAM*/
+    .team {
+        grid-template-areas: 
+            "person1 person2 person3"
+            "person4 person5 person6";
+    }
+
+    .person {
+        margin-bottom: 4rem;
+        margin-top: 0%;
+    }
+
+    .person2, .person5 {
+        margin-top: 3rem;
+    }
+}
